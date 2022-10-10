@@ -1,0 +1,34 @@
+import React from 'react'
+import {
+    View,
+    Text,
+    StyleSheet
+} from 'react-native'
+
+import HistoryItem from './HistoryItem'
+
+const History = () => {
+    return (
+        <View>
+
+            <Text style={styles.header_text}>History</Text>
+
+            <HistoryItem />
+            <HistoryItem />
+            <HistoryItem />
+
+        </View>
+    )
+}
+
+const styles = StyleSheet.create({
+    header_text: {
+        color: '#172B4D',
+        fontSize: 32,
+        fontWeight: '700',
+        textAlign: 'center',
+        marginBottom: 30,
+    }
+})
+
+export default History
